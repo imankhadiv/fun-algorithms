@@ -48,19 +48,28 @@ public class BasicStack<T> {
     }
 
     public static void main(String[] args) {
+
         BasicStack<String> basicStack = new BasicStack<>();
         basicStack.push("A");
         basicStack.push("B");
         basicStack.push("C");
         basicStack.push("D");
 
-        System.out.println(basicStack.size());
-        System.out.println(basicStack.pop());
-        System.out.println(basicStack.pop());
-        System.out.println(basicStack.pop());
-        System.out.println(basicStack.size());
-        System.out.println(basicStack.contains("A"));
-        System.out.println(basicStack.access("A"));
-        System.out.println(basicStack.size());
+        try {
+            System.out.println(basicStack.size());
+            System.out.println(basicStack.pop());
+            System.out.println(basicStack.pop());
+            System.out.println(basicStack.pop());
+            System.out.println(basicStack.size());
+            System.out.println(basicStack.contains("A"));
+            System.out.println(basicStack.access("A"));
+            System.out.println(basicStack.size());
+            System.out.println(basicStack.pop());
+            System.out.println(basicStack.pop());
+            System.out.println("finishing...");
+        }catch (Exception ex){
+            System.out.println(ex.getMessage());
+        }
+
     }
 }
